@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.fotter{
+    height: 60px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+}
+#heading{
+    color: white;
+    font-size: 40px;
+}
+#head{
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+p{
+    font-size: 30px;
+    margin: 50px;
+}
+#head1{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+#photo6{
+    background-image: url(photo9.PNG);
+    height: 800px;
+    width:800px;
+    position: relative;
+    left:450px;
+}
+#photo7{
+    background-image: url(photo10.PNG);
+    height: 200px;
+    width:500px;
+    position: relative;
+    left:450px;
+}
+#photo8{
+    background-image: url(photo11.PNG);
+    height: 820px;
+    width:550px;
+    position: relative;
+    left:450px;
+}
+#photo9{
+    background-image: url(capture29.png);
+    background-size: contain;
+    height: 800px;
+    width: 1500px;
+}
+#head4{
+    font-size: 40px;
+    text-align: center;
+    margin: 60px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#startBtn{
+    background-color: black;
+    color: white;
+    height: 20px;
+    width: 200px;
+}
+#stopBtn{
+    background-color: black;
+    color: white;
+    height: 20px;
+    width: 200px;
+}
+#head5{
+    font-size: 40px;
+    text-align: center;
+    margin: 60px;
+}
+#bgVideo{
+    width: 1500px;
+}
+#output{
+    background-color: black;
+    color: white;
+    height: 20px;
+    width: 200px;
+}
+#back1{
+    background-color: black;
+    color: white;
+    height: 20px;
+    width: 200px;
+}
+#image30{
+    background-image: url(Capture30.PNG);
+    background-size: contain;
+    height: 800px;
+    width: 1500px;
+}

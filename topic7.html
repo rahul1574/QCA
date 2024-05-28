@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALF SUBTRACTOR</title>
+    <link rel="stylesheet" href="topic7.css">
+</head>
+<body>
+    <section>
+        <div class="fotter">
+            <p id="heading">QCA-Quantum dot cellular automaton</p>
+            <button id="home"><a href="index.html">HOME</a></button>
+        </div>
+        <div id="head">HALL SUBTRACTOR QCA </div>
+        <p>A half subtractor is a fundamental digital circuit used to subtract one single-bit 
+            binary number from another, producing a difference and a borrow output. In 
+            Quantum-dot Cellular Automata (QCA), constructing a half subtractor involves using 
+            basic QCA components such as majority gates and inverters.
+        </p>
+        <div id="head1">Components Used</div>
+        <p>1. Majority Gates: Used for implementing logic operations. 
+        </p>
+        <p>2. Inverters: Used for signal inversion where necessary. 
+    
+        </p>
+        <div id="head1">Design of a Half Subtractor in QCA</div>
+        <p>To implement a half subtractor, we need to construct the XOR function for the 
+            difference and the AND and NOT functions for the borrow using QCA components.</p>
+        <p>1. Difference Output (D = A XOR B): - The XOR operation can be implemented using majority gates and inverters.</p>
+        <p>2. Borrow Output( Bout =   ̅ AND B): - The AND operation can be implemented using a majority gate, with one of the 
+            inputs being an inverted signal. 
+        </p>
+        <p>In QCA, a half subtractor is constructed using majority gates and inverters to perform 
+            the XOR and AND operations required for the difference and borrow outputs, 
+            respectively. By leveraging the Coulombic interactions and the inherent properties of 
+            QCA cells, the half subtractor effectively performs binary subtraction at the 
+            nanoscale, enabling the creation of more complex digital circuits. 
+        </p>
+        <p>The Half subtractor function can be defined by the equations:</p>
+        <P>DIFFERENCE= ( ̅.B) + (A ̅)</P>
+        <p>BORROW OUTPUT =  ̅. B</p>
+        <p>Half subtractor using majority gates </p>
+        <div id="photo6"></div>
+        <div id="photo7"></div>
+        <div id="photo8"></div>
+        <p>IMPLEMENTATION OF HALF SUBTRACTOR IN QCA 
+            TOOL </p>
+        <div id="photo9"></div>
+        <div id="head">Watch simulation clip below</div>
+            <main class="background-video">
+                <video id="bgVideo" autoplay muted loop>
+                    <source src="half subtractor simulation.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="content">
+                    <button id="startBtn">Start simulation clip</button>
+                    <button id="stopBtn">pause simulation clip</button>
+                    <button id="output">output</button>
+                    <button id="back1"><a href="index.html">Back to home</a></button>
+                </div>
+                <div id="image30">
+                    <div id="head4">Output</div>
+                </div>
+            </main>
+        <script src="topic7.js"></script>
+    </section>
+</body>
+</html>
