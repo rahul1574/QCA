@@ -1,0 +1,218 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow: hidden;
+    background-image: url(image1.jpg);
+}
+#picture{
+    background-image: url(picture.PNG);
+    height: 500px;
+    width: 400px;
+    position: relative;
+    bottom: 1000px;
+}
+.fotter{
+    height: 60px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.background-video{
+    position: relative;
+    left: 70px;
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: white; */
+}
+#box1{
+    color: white;
+    position: relative;
+    right: 190px;
+}
+p{
+    color: white;
+    font-size: 40px;
+}
+a{
+    text-decoration: none;
+}
+#home{
+    width: 50px;
+}
+#options1{
+    height: 700px;
+    width:800px;
+    position: relative;
+    right: 2100px;
+    /* bottom: 1400px; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.animate{
+    animation: move 2s forwards;
+}
+@keyframes move{
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(400px);
+    }
+}
+#topic1{
+    height: 40px;
+    width:300px;
+    color: white;
+    /* background-color: white; */
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+}
+#topic1:hover{
+    background-color: white;
+    color: black;
+}
+#topic1:active{
+    background-color:yellow;
+    color: black;
+}
+#topic2{
+    height: 40px;
+    width:300px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+#topic2:hover{
+    background-color: white;
+    color: black;
+}
+#topic2:active{
+    background-color:yellow;
+    color: black;
+}
+#topic3{
+    height: 40px;
+    width:300px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+#topic3:hover{
+    background-color: white;
+    color: black;
+}
+#topic3:active{
+    background-color:yellow;
+    color: black;
+}
+#topic4{
+    height: 40px;
+    width:300px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+#topic4:hover{
+    background-color: white;
+    color: black;
+}
+#topic4:active{
+    background-color:yellow;
+    color: black;
+}
+#topic5{
+    height: 40px;
+    width:300px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+#topic5:hover{
+    background-color: white;
+    color: black;
+}
+#topic5:active{
+    background-color:yellow;
+    color: black;
+}
+#topic6{
+    height: 40px;
+    width:300px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+#topic6:hover{
+    background-color: white;
+    color: black;
+}
+#topic6:active{
+    background-color:yellow;
+    color: black;
+}
+#topic7{
+    height: 40px;
+    width:300px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+#topic7:hover{
+    background-color: white;
+    color: black;
+}
+#topic7:active{
+    background-color:yellow;
+    color: black;
+}
+#topic8{
+    height: 40px;
+    width:300px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+#topic8:hover{
+    background-color: white;
+    color: black;
+}
+#topic8:active{
+    background-color:yellow;
+    color: black;
+}
+#topic9{
+    height: 40px;
+    width:300px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+#topic9:hover{
+    background-color: white;
+    color: black;
+}
+#topic9:active{
+    background-color:yellow;
+    color: black;
+}
+#back{
+    width: 70px;
+    height: 30px;
+}

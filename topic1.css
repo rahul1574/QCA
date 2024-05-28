@@ -1,0 +1,162 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}.fotter{
+    height: 60px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+}
+#heading{
+    color: white;
+    font-size: 40px;
+}
+#head{
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+p{
+    font-size: 30px;
+    margin: 50px;
+}
+#images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#image1{
+    background-image: url(Capture1.PNG);
+    background-size: contain;
+    height: 400px;
+    width: 700px;
+    align-items: center;
+    align-content: center;
+}
+#image3{
+    background-image: url(Capture3.PNG);
+    /* background-size: contain; */
+    height: 100px;
+    width: 300px;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    left:500px;
+    margin: 20px;
+}
+#pics{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+#image4{
+    background-image: url(Capture5.PNG);
+    height: 100px;
+    width: 500px;
+}
+#image5{
+    background-image: url(Capture6.PNG);
+    height: 240px;
+    width: 600px;
+}
+#image6{
+    background-image: url(Capture7.PNG);
+    height: 400px;
+    width: 700px;
+}
+#head1{
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+#image7{
+    background-image: url(Capture4.PNG);
+    height: 400px;
+    width: 700px;
+    position: relative;
+    left:400px;
+}
+#head2{
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+#image8{
+    background-image: url(Capture8.PNG);
+    height: 400px;
+    width: 700px;
+    position: relative;
+    left:400px;
+}
+#head3{
+    font-size: 40px;
+    text-align: center;
+    margin: 60px;
+}
+#image9{
+    background-image: url(Capture13.PNG);
+    background-size: contain;
+    height: 800px;
+    width: 1500px;
+}
+#image10{
+    background-image: url(Capture14.PNG);
+    background-size: contain;
+    height: 800px;
+    width: 1500px;
+}
+#head4{
+    font-size: 40px;
+    text-align: center;
+    margin: 60px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#startBtn{
+    background-color: black;
+    color: white;
+    height: 20px;
+    width: 200px;
+}
+#stopBtn{
+    background-color: black;
+    color: white;
+    height: 20px;
+    width: 200px;
+}
+#head5{
+    font-size: 40px;
+    text-align: center;
+    margin: 60px;
+}
+#bgVideo{
+    width: 1500px;
+}
+#output{
+    background-color: black;
+    color: white;
+    height: 20px;
+    width: 200px;
+}
+#back1{
+    background-color: black;
+    color: white;
+    height: 20px;
+    width: 200px;
+}

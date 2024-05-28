@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCA WIRE</title>
+    <link rel="stylesheet" href="topic2.css">
+</head>
+<body>
+    <div class="fotter">
+        <p id="heading">QCA-Quantum dot cellular automaton</p>
+        <button id="home"><a href="index.html">HOME</a></button>
+    </div>
+    <section>
+        <div id="head">QCA WIRE</div>
+        <p>In Quantum-dot Cellular Automata (QCA), wires are fundamental components that facilitate 
+            the transmission of binary information across the circuit. Here’s a detailed explanation of 
+            QCA wires:
+        </p>
+        <div id="head1">Structure of QCA Wires </div>
+        <p>1. Basic Cell Layout: - A QCA wire is composed of a linear array of QCA cells. - Each cell consists of four quantum dots positioned at the corners of a square, with two 
+            excess electrons that can tunnel between dots. 
+        </p>
+        <p>2. Cell Polarization: - The binary state of each cell is determined by the position of the two electrons, resulting 
+            in two possible polarizations:  - Polarization (P = +1) (representing binary '1') - Polarization (P = -1) (representing)</p>
+        <div id="head2">Working Principle</div>
+        <p>1. Columbic Interaction: - The state of each QCA cell is influenced by the electrostatic interaction with its 
+            neighboring cells. This interaction allows the cells to propagate their polarization state along 
+            the wire.
+        </p>
+        <p>- When a cell is polarized, it affects the polarization of adjacent cells, allowing a binary 
+            signal to travel through the wire. 
+        </p>
+        <p>2. Clocking Mechanism: - The operation of QCA wires is controlled by a four-phase clocking system. Each phase 
+            (clock0, clock1, clock2, clock3) manages the state of the cells, ensuring synchronized and 
+            directional information flow.
+        </p> 
+        <p> - Cells in different clock phases help propagate the signal in a stepwise manner, similar to a 
+            conveyor belt moving items along its path.
+        </p>
+        <div id="head3">Types of QCA Wires</div>
+        <p>1. 90-Degree Wire: - The simplest form of a QCA wire is a straight line where each cell is aligned with its 
+            neighbors.
+        </p.>
+        <p.>- The signal travels directly from one cell to the next in a linear fashion.
+        </p>
+        <p>2. 45-Degree Wire: - Cells are positioned diagonally, creating a wire that can change direction. - This type is used for routing signals around corners and is essential for more complex 
+            circuit layouts. 
+        </p>
+        <div id="head3">Signal Propagation </div>
+        <p>1. Binary Information Transfer: - Binary information is transferred by the sequential polarization of cells, where the 
+            polarization state of one cell influences the next.</p>
+        <p>The clocking mechanism ensures that each cell goes through phases of initialization, 
+            propagation, hold, and release, allowing the signal to move step-by-step along the wire.
+        </p>
+        <p>2. Signal Integrity: - The clocking ensures that signals do not propagate uncontrollably and maintains the 
+            integrity of the binary information.</p> 
+        <p>- Proper clocking and layout prevent issues such as signal degradation and unintended 
+            polarization.
+        </p>
+        <div id="head">IMPLME NTATION OF WIRE IN QCA TOOL </div>
+        <div id="image1"></div>
+        <div id="head5">Watch simulation clip below</div>
+        <main class="background-video">
+            <video id="bgVideo" autoplay muted loop>
+                <source src="sample wire with clocking simulation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content">
+                <button id="startBtn">Start simulation clip</button>
+                <button id="stopBtn">pause simulation clip</button>
+                <button id="output">output</button>
+                <button id="back1"><a href="index.html">Back to home</a></button>
+            </div>
+            <div id="image12">
+                <div id="head4">Output</div>
+            </div>
+        </main>
+    </section>
+    <script src="topic2.js"></script>
+</body>
+</html>

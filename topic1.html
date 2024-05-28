@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCTION TO QCA</title>
+    <link rel="stylesheet" href="topic1.css">
+</head>
+<body>
+    <div class="fotter">
+        <p id="heading">QCA-Quantum dot cellular automaton</p>
+        <button id="home"><a href="index.html">HOME</a></button>
+    </div>
+    <section>
+        <div id="head">Introduction of QCA</div>
+        <p>In today’s computers, binary information is encoded using current switches. The on and off 
+            states of current switches represent bit “1” and “0” respectively. In a transistor, when the 
+            gate voltage is less than the threshold voltage, there is no current flow; the transistor is off. 
+            Only when the gate voltage is greater than the threshold voltage is there current flow. The 
+            conventional transistor-based CMOS technology has followed Moore’s Law, doubling 
+            transistors every 18 months. Shrinking transistors has been the major trend to achieve 
+            circuits with fast speed, high densities and low power dissipation. However, when scaling 
+            comes down to submicron level, many problems occur. Physical limits such as quantum 
+            effects and non-deterministic behavior of small currents and technological limits like power 
+            dissipation and design complexity may hinder the further progress of microelectronics using 
+            conventional circuit scaling. A new paradigm, beyond current switches to encode binary 
+            information, may be needed. Quantum-dot cellular automata (QCA) emerges as such a 
+            paradigm. It was proposed by Lent et al. in 1993 [1]. Since then, a significant amount of 
+            research has been done in QCA both theoretically and experimentally [2-58]. It has become 
+            one of the promising candidates for nano-computing. QCA encodes binary information in 
+            the charge configuration within a cell. Coulomb interaction between cells is sufficient to 
+            accomplish the computation in QCA arrays—thus no interconnect wires are needed 
+            between cells. No current flows out of the cell so that low power dissipation is possible.
+        </p>
+        <div id="images">
+            <div id="image1"></div>
+        </div>
+        <p>A simple QCA cell consists of four quantum dots arranged in a square, dots are simply places 
+            where a charge can be localized. There are two extra electrons in the cell that are free to 
+            move between the four dots. Tunneling in or out of a cell is suppressed. The numbering of 
+            the dots in the cell goes clockwise starting from the dot on the top right. A polarization P in 
+            a cell, which measures the extent to which the electronic charge is distributed among the 
+            four dots, is therefore defined as 
+        </p>
+        <div id="image3"></div>
+        <p>where ρi denotes the electronic charge at dot i. Because of Coulomb repulsion, the 
+            electrons will occupy antipodal sites. The two polarized charge configurations P = −1 and P = 
+            1 correspond bit value of 0 and 1 respectively. These two states are used to encode the 
+            binary information. When a polarized cell is placed close to another cell in line, the Coulomb 
+            interaction between them will force the second cell switch into the same state as the first 
+            cell, minimizing the electrostatic energy in the charge configuration of the cells. Based on 
+            the Coulomb interaction between cells, fundamental QCA devices can be built. 
+            A binary wire can be realized with a line of cells to transmit information from one cell to 
+            another. Two diagonally aligned cells will have the opposite polarization. Inverters can 
+            therefore be implemented with lines of diagonally aligned cells. A majority gate can be built 
+            with five cells. The top, left and bottom cells are inputs. The device cell in the center 
+            interacts with the three inputs and its result (the majority of the input bits) will be 
+            propagated to the cell on the right. A majority gate is the basic logic gate in QCA, as it can 
+            function as an “OR” gate with one of the inputs fixed to “1” and function as an “AND” gate 
+            with one of the inputs fixed to “0”. 
+        </p>
+        <div id="pics">
+            <div id="image4"></div>
+            <div id="image5"></div>
+            <div id="image6"></div>
+        </div>
+        <div id="head1">Metallic QCA cells</div>
+        <p>QCA devices exist. Metal dot QCA cells are built with metallic tunnel junctions and very 
+            small capacitors. Aluminum islands form the dots and aluminum oxide tunnel junctions 
+            serve as the tunneling paths between dots. Figure 1.3 illustrates the implementation of a 
+            four-dot QCA cell [22]. Electrons can tunnel between dot 1 and dot 2 and between dot 3 and 
+            dot 4 through tunnel junctions. Figure 1.4 is a scanning electron micrograph of the four-dot 
+            cell. The four red dots indicate the positions of the four metal islands. The two magenta dots 
+            represent single electron transistor electrometers that are used to measure the output. The 
+            fabrication technique uses a combination of electron beam lithography and dual-angle 
+            evaporation to deposit thin lines of aluminum that form overlaps with a small area. The lines 
+            of aluminum thus form dots and the thin layer of aluminum oxide within the overlaps form 
+            the tunnel junction. The area of the tunnel junction is about 50nm × 50nm and the thickness 
+            of the aluminum oxide is about 2nm. The experiment is performed in a dilution refrigerator 
+            at a magnetic field of 1 Tesla to suppress the superconducting effect in aluminum. Figure 1.5 
+            shows the measured characteristics of a four-dot cell *27+. The differential input (V1 − V2) is 
+            applied between dot 1 and 2 with coupling capacitors. ΦD1, ΦD2, ΦD3, ΦD4 are the 
+            measured dot potentials. When a positive input is applied, an electron tunnels from dot 2 to 
+            dot 1, which in turn will switch an electron from dot 3 to dot 4 due to the capacitively 
+            coupling between dot 1 and dot 3 and between dot 2 and dot 4. 
+            Metal dot QCA devices have been successfully demonstrated at low temperatures. Majority 
+            logic gates, binary wires, memories, and clocked multi-stage shift registers have all been 
+            fabricated.
+        </p>
+        <div id="image7"></div>
+        <p>The schematic of the majority gate experiment which corresponds above. Four aluminum 
+            dots are connected in a ring by tunnel junctions. Each dot is coupled to a metal gate through 
+            a gate capacitor. The differential signal A( between gate 1 and 3), B (between gate 1 and 2) 
+            and C (between gate 2 and 4) constitute the three inputs. The output is the differential 
+            potential between dot 3 and dot 4. Electrometers are used to measure the potential in dot 3 
+            and dot 4. Figure 1.7 demonstrates the operation of the majority gate. The experiment 
+            result and theory matches very well. The data confirms the majority gate operation in QCA. 
+            These metal-dot QCA devices, though limited by the fabrication method to low temperature 
+            operation, provide valuable demonstrations of QCA circuits. They serve as prototypes for 
+            molecular systems that will function at room temperature.
+        </p>
+        <div id="head2">Clocking in QCA </div>
+        <p>In Quantum-dot Cellular Automata (QCA), clocks play a vital role in coordinating the 
+            operations of the system. QCA is a novel computing paradigm that exploits the quantum 
+            properties of charge and polarization in Nano scale structures to perform computational 
+            tasks. 
+            The four clock phases operate in a cyclic manner, with each clock phase lagging behind the 
+            previous one. This staggered clocking is crucial for the QCA circuit's operation because it 
+            ensures a smooth and controlled flow of information - A group of QCA cells will be in one of the four clock phases at any given time. - Cells in clock0 phase will transition to clock1, those in clock1 will move to clock2, and so on. - The periodic cycling through these phases allows for synchronized data movement through 
+            the QCA network, effectively preventing data  
+            Collisions  and ensuring orderly processing. 
+            In a QCA circuit, the clock phases are typically distributed spatially: 
+            - Adjacent cells are assigned different clock phases to facilitate the movement of 
+            information. - For example, a cell in clock0 Quantum-dot Cellular Automata (QCA) is a technology for 
+            designing digital circuits that use quantum dots to represent binary information. One of the 
+            key features of QCA is its use of a clocking mechanism to control the flow of information 
+            through a circuit. The clocking scheme in QCA typically involves multiple clock phases, 
+            usually denoted as clock0, clock1, clock2, and clock3. Here is an explanation of how these 
+            clocks work: 
+            1. Clock0: Initialization Phase - Function: During this phase, the QCA cells are initialized. The potential wells of the 
+            quantum dots are raised, making the cells lose their polarization and return to a neutral 
+            state. - Effect on Cells: The cells do not hold any logical state (i.e., they are in a reset state). 
+            2. Clock1: Propagation Phase - Function: In this phase, the potential wells begin to lower slightly, allowing the cells to 
+            start capturing the polarization from their neighbors. - Effect on Cells: Cells begin to polarize based on the state of their neighboring cells, 
+            essentially allowing information to propagate through the circuit. 
+            3. Clock2: Hold Phase - Function: The potential wells are fully lowered during this phase, firmly locking the 
+            polarization state of the cells. - Effect on Cells: Cells maintain their current logical state, acting as storage elements. 
+            4. Clock3: Release Phase - Function: The potential wells begin to rise again, preparing the cells to return to the 
+            initialization phase. - Effect on Cells: Cells gradually lose their polarization, transitioning back to a neutral state 
+            in readiness for the next cycle. 
+            Cycle of Clock Phases 
+            Phase will pass its state to a neighboring cell in clock1 phase, which will then hold the state 
+            and pass it to another cell in clock2 phase, and so forth. - Clock0: Resets the cells to a neutral state. - Clock1: Allows cells to polarize and start propagating data. - Clock2: Locks the cells’ states to hold information. 
+            - Clock3: Prepares cells to return to a neutral state, ready for the next cycle.
+        </p>
+        <div id="image8"></div>
+        <div id="head3">IMPLMENTATION OF DIFFERENT CLOCK IN QCA TOOL </div>
+        <div id="image9"></div>
+        <div id="head5">Watch simulation clip below</div>
+        <main class="background-video">
+            <video id="bgVideo" autoplay muted loop>
+                <source src="clocking-simulation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content">
+                <button id="startBtn">Start simulation clip</button>
+                <button id="stopBtn">pause simulation clip</button>
+                <button id="output">output</button>
+                <button id="back1"><a href="index.html">Back to home</a></button>
+            </div>
+            <div id="image10">
+                <div id="head4">Output</div>
+            </div>
+        </main>
+    </section>
+    <script src="topic1.js"></script>
+</body>
+</html>
