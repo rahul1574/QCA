@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCA MAJORITY GATE</title>
+    <link rel="stylesheet" href="topic4.css">
+</head>
+<body>
+    <div class="fotter">
+        <p id="heading">QCA-Quantum dot cellular automaton</p>
+        <button id="home"><a href="index.html">HOME</a></button>
+    </div>
+    <section>
+        <div id="head">MAJORITY GATE QCA </div>
+        <P>In Quantum-dot Cellular Automata (QCA), the majority gate is a fundamental logic 
+            element that performs a majority voting function on three input signals. The majority 
+            gate outputs the value that is in the majority among its three inputs. This gate can be 
+            used to implement various logic functions, including AND, OR, and the inverter (NOT 
+            gate) when combined with fixed inputs.
+        </P>
+        <div id="head1">Structure of a Majority Gate </div>
+        <ul>1. QCA Cells Arrangement
+            <li>The majority gate typically consists of five QCA cells arranged in a cross pattern:</li>
+            <li> Three input cells (A, B, and C) </li>
+            <li> One central cell (M) </li>
+            <li> One output cell (O) </li>
+        </ul>
+        <ul>2. Positioning: 
+            <li>The three input cells (A, B, and C) are placed at three corners of a cross. </li>
+            <li>The central cell (M) is at the intersection of the inputs</li>
+            <li> The output cell (O) is at the fourth corner, directly influenced by the central cell 
+                (M).
+             </li>
+        </ul>
+        <div id="head1">Working Principle</div>
+        <p>1. Input Polarizations: - Each input cell can be in one of two polarization states, representing binary 0 or 1. 
+
+        </p>
+        <p>2. Electron Configuration: - The polarization of each input cell influences the electron configuration of the 
+            central cell (M) due to Coulombic interactions.
+        </p>
+        <p>3. Majority Voting: - The central cell (M) adopts a polarization that reflects the majority of the input 
+            cells. If at least two of the three input cells have the same polarization, the central cell 
+            will also adopt that polarization.
+        </p>
+        <p>- The output cell (O) then takes on the polarization of the central cell (M), thus 
+            representing the majority value of the inputs.
+        </p>
+        <p>
+            Output equation for majority gate will be M=AB+BC+CA.
+        </p>
+        <div id="head">IMPLEMENTATION OF MAJORITY GATE IN QCA 
+            TOOL 
+        </div>
+        <div id="image1"></div>
+        <div id="head">Watch simulation clip below</div>
+        <main class="background-video">
+            <video id="bgVideo" autoplay muted loop>
+                <source src="majority gate simulation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content">
+                <button id="startBtn">Start simulation clip</button>
+                <button id="stopBtn">pause simulation clip</button>
+                <button id="output">output</button>
+                <button id="back1"><a href="index.html">Back to home</a></button>
+            </div>
+            <div id="image20">
+                <div id="head4">Output</div>
+            </div>
+        </main>
+        <div id="head">Implementing Logic Functions with Majority Gate </div>
+        <p>1. AND Gate:</p>
+        <p> - Fix one of the inputs (C) to 0. </p>
+        <p> - The majority gate equation becomes  M (A, B, 0) = A .B  </p>
+        <div id="photo1"></div>
+        <p>As per the equation of majority gate, we get</p>
+        <p>M (A, B, 0) = AB+B(0)+(0)A </p>
+        <p>M (A, B, 0) = AB </p>
+        <div id="head">IMLEMENTATION OF AND GATE IN QCA TOOL</div>
+        <div id="photo2"></div>
+        <div id="head">Watch simulation clip below</div>
+        <main class="background-video">
+            <video id="bgVideo1" autoplay muted loop>
+                <source src="and gate simulation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content1">
+                <button id="startBtn1">Start simulation clip</button>
+                <button id="stopBtn1">pause simulation clip</button>
+                <button id="output1">output</button>
+                <button id="back11"><a href="index.html">Back to home</a></button>
+            </div>
+            <div id="image22">
+                <div id="head4">Output</div>
+            </div>
+        </main>
+        <p>2. OR Gate: </p>
+        <p>- Fix one of the inputs (C) to 1.</p>
+        <p> - The majority gate equation becomes  M (A, B, 1) = A + B   </p>
+        <div id="photo3"></div>
+        <p>As per the equation of majority gate, we get</p>
+        <p>M (A, B, 1) = AB+B(1)+(1)A </p>
+        <p>M (A, B, 1) = AB+A+B</p>
+        <p>M (A, B, 1) = A+B   (from AB+A=A) </p>
+        <div id="head">IMLEMENTATION OF AND GATE IN QCA TOOL</div>
+        <div id="photo4"></div>
+        <div id="head">Watch simulation clip below</div>
+        <main class="background-video">
+            <video id="bgVideo2" autoplay muted loop>
+                <source src="OR gate simulation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content2">
+                <button id="startBtn2">Start simulation clip</button>
+                <button id="stopBtn2">pause simulation clip</button>
+                <button id="output2">output</button>
+                <button id="back12"><a href="index.html">Back to home</a></button>
+            </div>
+            <div id="image24">
+                <div id="head4">Output</div>
+            </div>
+        </main>
+    </section>
+    <script src="topic4.js"></script>
+</body>
+</html>

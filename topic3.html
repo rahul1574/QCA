@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCA MAJORITY GATE</title>
+    <link rel="stylesheet" href="topic3.css">
+</head>
+<body>
+    <div class="fotter">
+        <p id="heading">QCA-Quantum dot cellular automaton</p>
+        <button id="home"><a href="index.html">HOME</a></button>
+    </div>
+    <section>
+        <div id="head">QCA Inverters </div>
+        <p>Quantum-dot Cellular Automata (QCA) is an emerging technology for constructing logic 
+            devices at the Nano scale, promising high speeds and low power consumption. In QCA, the 
+            basic logic elements are cells consisting of quantum dots, and electrons can tunnel between 
+            these dots, allowing for the creation of binary logic states. One of the fundamental 
+            components in QCA is the inverter (NOT gate). 
+        </p>
+        <div id="head1">Inverter Functionality </div>
+        <p>In QCA, an inverter is created by placing a cell in such a way that the polarization of the input 
+            cell forces the output cell into the opposite state.
+        </p>
+        <p>- When an input cell with polarization corresponding to binary 1 is placed next to a central 
+            cell, the electrons in the central cell will configure in a way that results in binary 0. 
+        </p>
+        <p>- Conversely, when the input cell has polarization corresponding to binary 0, the central 
+            cell will have polarization corresponding to binary 1.
+        </p>
+        <p>The efficiency of a QCA inverter depends on various factors, including the distance between 
+            cells, the arrangement of cells, and the interaction strength between quantum dots.
+        </p>
+        <div id="head">Types of Inverters</div>
+        <div id="head1">Normal inverter </div>
+        <p>A normal inverter in the context of Quantum-dot Cellular Automata (QCA) refers to a 
+            basic QCA NOT gate, which inverts the binary input signal. Here is a detailed 
+            overview of how a normal inverter operates in QCA:
+        </p>
+        <p>1. QCA Cell: - A QCA cell typically consists of four quantum dots arranged in a square pattern.  
+
+        </p>
+        <p>- Two electrons occupy these dots and can tunnel between them, with their 
+            positions determining the cell’s binary state (0 or 1).
+        </p>
+        <p>2. Basic Inverter Design: - The simplest form of an inverter uses a direct neighbor interaction, where an 
+            input cell is placed adjacent to an output cell.
+        </p>
+        <p>- The input cell's polarization forces the output cell to adopt the opposite 
+            polarization due to Coulombic repulsion between the electrons in the neighboring 
+            cells.
+        </p>
+        <div id="head1">Working Principle</div>
+        <p>1. Binary States: - Binary 1: The electrons in the QCA cell occupy opposite corners, such as top left 
+            and bottom right
+        </p>
+        <p>- Binary 0: The electrons occupy the other set of opposite corners, such as top right 
+            and bottom left. 
+        </p>
+        <p>2. Inversion Mechanism: - When an input cell is polarized to binary 1, the repulsive forces cause the 
+            neighboring output cell to assume the configuration corresponding to binary 0.
+        </p>
+        <p>- Conversely, when the input cell is polarized to binary 0, the output cell is forced 
+            into the binary 1 configuration. 
+        </p>
+        <div id="head">IMPLEMENTATION OF NORMAL INVERTER IN QCA 
+            TOOL</div>
+        <div id="image1"></div>
+        <div id="head">Watch simulation clip below</div>
+        <main class="background-video">
+            <video id="bgVideo" autoplay muted loop>
+                <source src="normal inverter simulation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content">
+                <button id="startBtn">Start simulation clip</button>
+                <button id="stopBtn">pause simulation clip</button>
+                <button id="output">output</button>
+                <button id="back1"><a href="index.html">Back to home</a></button>
+            </div>
+            <div id="image16">
+                <div id="head4">Output</div>
+            </div>
+        </main>
+        <div id="head1">Robust Inverter</div>
+        <p>In Quantum-dot Cellular Automata (QCA), a robust inverter refers to a more reliable 
+            and fault-tolerant version of the basic inverter, designed to function correctly even in 
+            the presence of fabrication imperfections, thermal fluctuations, and other practical 
+            challenges.
+        </p>
+        <p>Instead of using a single pair of cells for the input and output, robust inverters may 
+            use multiple cells in parallel to ensure that a single point of failure does not affect the 
+            entire logic operation. 
+        </p>
+        <p>Robust inverters in QCA are designed to overcome the challenges associated with 
+            Nano scale fabrication and operational environments. By using redundancy, majority 
+            voting mechanisms, and optimized cell arrangements, robust inverters enhance the 
+            reliability and performance of QCA-based logic circuits, paving the way for practical 
+            and scalable quantum-dot cellular automata technologies.
+        </p>
+        <div id="head">IMPLEMENTATION OF ROBUST INVERTER IN QCA 
+            TOOL </div>
+        <div id="image2"></div>
+        <div id="head">Watch simulation clip below</div>
+        <main class="background-video">
+            <video id="bgVideo2" autoplay muted loop>
+                <source src="Robust inverter - simulation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content2">
+                <button id="startBtn2">Start simulation clip</button>
+                <button id="stopBtn2">pause simulation clip</button>
+                <button id="output2">output</button>
+                <button id="back12"><a href="index.html">Back to home</a></button>
+            </div>
+            <div id="image18">
+                <div id="head4">Output</div>
+            </div>
+        </main>
+    </section>
+    <script src="topic3.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCA XOR GATE</title>
+    <link rel="stylesheet" href="topic5.css">
+</head>
+<body>
+    <div class="fotter">
+        <p id="heading">QCA-Quantum dot cellular automaton</p>
+        <button id="home"><a href="index.html">HOME</a></button>
+    </div>
+    <section>
+        <div id="head">XOR GATE QCA </div>
+        <p>An XOR gate (exclusive OR gate) is a fundamental digital logic gate that outputs true 
+            or 1 only when the two binary input values are unequal. In Quantum-dot Cellular 
+            Automata (QCA), constructing an XOR gate involves combining basic QCA 
+            components such as majority gates and inverters. Here’s a detailed look at how an 
+            XOR gate works in QCA: 
+        </p>
+        <div id="head1">XOR Gate Functionality</div>
+        <p>The XOR function can be defined by the equation: </p>
+        <p>XOR (A, B) = (  ̅.B)+(A. ̅) </p>
+        <ul>In QCA, the XOR gate can be constructed using the following components: 
+            <li>1. Majority Gates: To perform the majority voting function.</li>
+            <li>2. Inverters: To invert the input signals as required.</li>
+        </ul>
+        <p>The XOR gate can be implemented using a combination of two majority gates and 
+            two inverters. The key idea is to use the properties of the majority gate to construct 
+            the AND, OR, and NOT operations necessary to realize the XOR function.
+        </p>
+        <div id="head1">XOR using majority gates</div>
+        <div id="photo4"></div>
+        <div  id="photo5"></div>
+        <div id="head">IMPLEMENTATION OF XOR GATE IN QCA </div>
+        <div id="image1"></div>
+        <div id="head">Watch simulation clip below</div>
+        <main class="background-video">
+            <video id="bgVideo" autoplay muted loop>
+                <source src="XOR gate simulation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content">
+                <button id="startBtn">Start simulation clip</button>
+                <button id="stopBtn">pause simulation clip</button>
+                <button id="output">output</button>
+                <button id="back1"><a href="index.html">Back to home</a></button>
+            </div>
+            <div id="image26">
+                <div id="head4">Output</div>
+            </div>
+        </main>
+    </section>
+    <script src="topic5.js"></script>
+</body>
+</html>
